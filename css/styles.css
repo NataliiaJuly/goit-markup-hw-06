@@ -664,14 +664,15 @@ body {
   border-radius: 4px;
   background-color: transparent;
   color: #fff;
+    font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 .subscribe-input::placeholder {
   display: flex;
   align-items: center;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
+
   color: #ffffff;
 }
 .subscribe-btn {
