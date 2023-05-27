@@ -767,14 +767,14 @@ body {
   pointer-events: none;
 }
 
-.contact-form-field-wrapper,
+/* .contact-form-field-wrapper,
 .contact-form-checkbox-wrapper {
   display: block;
   margin-bottom: 8px;
-}
+} */
 
 .contact-form-field-wrapper {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .contact-form-input {
