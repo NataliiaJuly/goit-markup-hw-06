@@ -680,7 +680,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 40x;
-  width: 165px;
+  min-width: 165px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -724,9 +724,7 @@ body {
   height: 576px;
   top: 50%;
   left: 50%;
-  padding: 72px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 72px 24px 24px 24px; 
   transform: translate(-50%, -50%);
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -775,12 +773,18 @@ body {
   margin-bottom: 8px;
 }
 
+.contact-form-field-wrapper {
+    margin-bottom: 16px;
+}
+
 .contact-form-input {
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent; 
+  outline: transparent; 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -804,6 +808,8 @@ body {
 .contact-form-field-desc {
   display: block;
   font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em; 
   color: #8e8f99;
   margin-bottom: 4px;
 }
@@ -827,11 +833,16 @@ body {
 .contact-form-message {
   width: 100%;
   height: 120px;
+  font-size: 12px; 
+  letter-spacing: 0.04em;
   resize: none;
   padding: 8px 16px;
   line-height: 1.17;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  color: rgba(46, 47, 66, 0.4); 
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
+  background-color: transparent; 
+  outline: transparent; 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-form-message::placeholder {
@@ -858,6 +869,8 @@ textarea {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
+  line-height: 1.17; 
+  color: #8e8f99;
 }
 .checkbox-policy {
   text-decoration-line: underline;
@@ -883,6 +896,8 @@ textarea {
   background-color: #404bbf;
   fill: #fff;
   border: none;
+  border-color: #404bbf;
+
 }
 
 .visually-hidden {
